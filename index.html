@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+<link rel="stylesheet" href="master.css">
+</head>
+<body > 
+<div class="head text-center">
+   <h2  > cruds</h2>
+   <p>Create Read Update Delete Search</p>
+</div>
+
+
+<div class="container mt-5 text-light">
+   <div class="inputs">
+       <input type="text" class="form-control mb-2" placeholder="Title" id="Title">
+       <div class="input-group mb-2" >
+           <input type="number" onkeyup="getTotal()" id="Price"  class="form-control" placeholder="Price">
+           <input type="number" onkeyup="getTotal()" id="Tax" class="form-control" placeholder="Tax">
+           <input type="number" onkeyup="getTotal()" id="Ads" class="form-control" placeholder="Ads">
+           <input type="number" onkeyup="getTotal()" id="Discount" class="form-control" placeholder="Discount">
+           <small class="total mb-2" id="total"></small>
+      
+       </div>
+       
+       <input type="number" class="form-control mb-2" id="Count" placeholder="Count">
+       <input type="text" class="form-control mb-2" id="Category" placeholder="Category">
+       <button  class="Create" style="width: 100%; background-color:#2e3267 ;"> Create </button>
+   </div>
+</div>
+
+
+
+<div class="outputss">
+   <div class="container mt-2">
+       <input onkeyup=" searchData(this.value )" type="search" class="form-control" placeholder="Search" id="search">
+       <div class="input-group mb-3">
+            
+           <div class="input-group-append">
+               <button onclick="search('SearchByTitle')" class="btn   text-light" type="button" id="SearchByTitle">Search By Title</button>
+               <button onclick="search('SearchByCategory')" class="btn   text-light" type="button" id="SearchByCategory">Search By Category</button>
+           </div>
+           
+       </div>
+   </div>
+
+   <div class="container mt-2 text-center">
+       <div id="deleteAll"> </div>
+       <table class="table table-striped">
+           <thead>
+               <tr>
+                   <th scope="col">Id</th>
+                   <th scope="col">Title</th>
+                   <th scope="col">Price</th>
+                   <th scope="col">Taxes</th>
+                   <th scope="col">Ads</th>
+                   <th scope="col">Discount</th>
+                   <th scope="col">Total</th>
+                   <th scope="col">Category</th>
+                   <th scope="col">Actions</th>
+               </tr>
+           </thead>
+           <tbody id="tbody"> 
+               <!-- Add more rows as needed -->
+           </tbody>
+       </table>
+   </div>
+</div>
+
+
+
+<script src="main.js"></script>
+<script src="bootstrap-4.0.0-dist/js/popper.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/jquery-3.7.1.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+</body>
+</html>

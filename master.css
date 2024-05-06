@@ -1,0 +1,102 @@
+body{
+    background-color: #424890;
+    color: white;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+.head{
+    margin: 40px 0 0 ;
+}
+
+/* input */
+.Create:hover{
+    background-color: red;
+    letter-spacing: 1px ;
+    
+ }
+input{
+    width: 100%;
+    height: 30px ;
+    border: none;
+    outline: none;
+    background-color: #2e3267;
+    transition: 0.5s ease;
+    margin: 5px 2px  ;
+    border-radius: 5px ;
+    padding: 4px 5px ;
+    color: white;
+}
+.input-group input{
+    width: 20%;
+    margin: 0 3px ;
+ }
+input:focus{
+    transform: scale(1.05);
+} 
+.total{
+    background-color:#1f2641;
+    padding:  5px ;
+    border-radius: 5px ;
+}
+.total::before{
+    content: "Total : ";
+}
+button
+,#deleteAll{
+
+    border: none;
+    outline: none;
+    border-radius: 20px ;
+    background-color: #1f2641;
+    margin: 5px 2px ;
+    color: white;
+    width: 45%;
+    cursor: pointer;
+    padding: 5px ;
+    transition: 0.3s ease;
+}
+#deleteAll{
+    width: 100%;
+    transition: 0.5s ease ;
+    padding:  3px 0 ;
+}
+#deleteAll:hover{
+    letter-spacing: 1px;
+    background-color: #2e3267;
+    
+}
+/* outputss */
+.input-group-append {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+}
+
+
+
+/* -outputs */
+.input-group-append button:hover{
+ 
+    transition: 0.5s ease;
+}
+.input-group-append button:hover{
+    background-color: #2e3267;
+    letter-spacing: 1px ;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
